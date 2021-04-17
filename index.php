@@ -23,4 +23,15 @@ $user_form = '<form action="' . $_SERVER['PHP_SELF'] . '" method="post" name="au
 
 echo $user_form;
 
+$str_form_s = '<h3>Сортировать по:</h3>
+<form action="index.php" method="post" name="sort_form">
+<select name="sort" id="sort" size="1">
+    <option value="name">названию</option>
+    <option value="area">площади</option>
+    <option value="population">среднему населению</option>
+</select>
+<input type="submit" name="submit" value="OK">
+</form>';
+echo $str_form_s;
+
 include "footer.php";
