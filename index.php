@@ -8,7 +8,7 @@ if (isset($_POST["go"])) {
     if (check_autorize($login)) {
         echo "Привет, $login";
         if (check_admin($login, $password)) {
-            echo "<a href='hello.php'>Просмотр отчета</a>";
+            echo "<a href='hello.php?login=$login'>Просмотр отчета</a>";
         }
 
     } else {
