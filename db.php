@@ -9,7 +9,7 @@ $countries = [
         "name" => "France",
         "capital" => "Paris",
         "area" => 640679,
-        "population" => array(
+        "population" => [
             "2000" => 59278000,
             "2010" => 59278000,
         ],
@@ -18,7 +18,7 @@ $countries = [
         "name" => "England",
         "capital" => "London",
         "area" => 130395,
-        "population" => array(
+        "population" => [
             "2000" => 58800000,
             "2010" => 63200000,
         ],
@@ -27,7 +27,7 @@ $countries = [
         "name" => "Deutschland",
         "capital" => "Berlin",
         "area" => 357021,
-        "population" => array(
+        "population" => [
             "2000" => 82260000,
             "2010" => 81752000,
         ],
