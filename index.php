@@ -34,4 +34,18 @@ $str_form_s = '<h3>Сортировать по:</h3>
 </form>';
 echo $str_form_s;
 
+if (isset($_POST["sort"])) {
+    $how_to_sort = $_POST["sort"];
+    sorting($how_to_sort);
+    $out = out_arr();
+
+    if (count($out) > 0) {
+        foreach ($out as $row) {
+            echo $row;
+        }
+    } else {
+        echo "Нет данных";
+    }
+}
+
 include "footer.php";
