@@ -7,6 +7,10 @@ if (isset($_POST["go"])) {
     $password = $_POST["pass"];
     if (check_autorize($login)) {
         echo "Привет, $login";
+        if (check_admin($login, $password)) {
+            echo "<a href='hello.php'>Просмотр отчета</a>";
+        }
+
     } else {
         echo "Ошибка авторизации!";
     }
